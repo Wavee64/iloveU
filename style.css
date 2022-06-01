@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d6aed4;
+}
+.list {
+  height: 400px;
+  width: 400px;
+  background: linear-gradient(to right , #a2f3a2 , #72cdda);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 10px;
+  flex-direction: column;
+  /* display: none; */
+}
+.btn:hover {
+  background: linear-gradient(180deg, #b69db6, #9beeea);
+}
+.list p {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.btn {
+  font-size: 1.7rem;
+  padding: 20px;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid violet;
+  cursor: pointer;
+  background: linear-gradient(90deg, red, #7db5db);
+  margin-top: 30px;
+  animation: animate 10s linear;
+}
+
+.content {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  display: none;
+}
+.content img {
+  height: 100%;
+  width: 100%;
+  visibility: visible;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.context {
+  position: absolute;
+  padding: 20px;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+.context p {
+  color: #131112;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.context span {
+  color: red;
+  font-size: 2rem;
+}
+.box {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+.container img {
+  height: 600px;
+  height: 600px;
+  position: absolute;
+  bottom: -250px;
+}
+.text {
+  width: 600px;
+  position: absolute;
+  /* background:  linear-gradient( to right, #a8e2a8 , #2cccff );; */
+  font-size: 2rem;
+  padding: 20px;
+  border-radius: 20px 10px;
+  top: -220px;
+  left: 0;
+  animation: ani 3s ease;
+}
+
+.container .btn {
+  position: relative;
+  transform: translate(90px, 250px);
+  margin-right: 10px;
+}
+.box {
+     display: none;
+}
+.box p {
+  font-size: 2rem;
+  text-align: center;
+}
+@keyframes ani {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.block {
+  display: flex;
+}
+.display {
+  display: none;
+}
